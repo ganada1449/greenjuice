@@ -2,24 +2,34 @@ $(document).ready(function () {
 
     // 위로가기
     $('.gotop').click(function (e) {
-        // href 를 막는다.
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
         });
     });
 
-    // 스크롤바 처리
+    // 스크롤바
     $(window).scroll(function () {
         // 스크롤바의 위치
         var scY = $(window).scrollTop();
 
-        if (scY >= 200) {
+        if (scY >= 300) {
             $('.gotop').addClass('gotop-active');
         } else {
             $('.gotop').removeClass('gotop-active');
         }
 
+    });
+
+    // cs 슬라이드
+    new Swiper('.sw-cs', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 2,
+        pagination: {
+            el: ".sw-cs-pg",
+            clickable: true,
+        },
     });
 
     // 베스트 상품 메뉴 
@@ -38,7 +48,7 @@ $(document).ready(function () {
     });
 
     // 배너슬라이드
-    new Swiper('.swiper-container', {
+    new Swiper('.sw-banner2', {
         loop: true,
         autoplay: {
             delay: 2000,

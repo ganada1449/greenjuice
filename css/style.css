@@ -123,7 +123,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     color: #333;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
     line-height: 1.4;
 }
 
@@ -177,7 +177,7 @@ body {
     margin-right: 0;
 }
 
-.header-top-list>li:after {
+.header-top-list>li::after {
     content: '';
     position: absolute;
     right: 0;
@@ -250,7 +250,7 @@ body {
 }
 
 .depth1>li>a:hover {
-    color: #80d725;
+    color: #80b725;
 }
 
 .mem-list {
@@ -274,7 +274,7 @@ body {
 
 .mem-list>li>a {
     position: relative;
-    display: block;
+    display: inline-block;
     width: 3rem;
     height: 3rem;
     background: url('../images/ico_sprite_pc.png') no-repeat;
@@ -337,8 +337,75 @@ body {
     display: block;
     width: 46rem;
     height: 10rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.sw-cs {}
+
+.sw-cs a {
+    display: block;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+    white-space: nowrap;
+}
+
+.cs-icon {
+    display: block;
+    width: 3.5rem;
+    height: 4rem;
+    margin: 0 auto;
+    background: url('../images/ico_sprite_pc.png') no-repeat;
     overflow: hidden;
-    background-color: #8fcb64;
+    margin: 1.5rem auto;
+}
+
+.cs-icon-1 {
+    background-position: -1.5rem -8.5rem;
+}
+
+.cs-icon-2 {
+    background-position: -7rem -8.5rem;
+}
+
+.cs-icon-3 {
+    width: 4rem;
+    background-position: -12.1rem -8.5rem;
+}
+
+.cs-icon-4 {
+    width: 4rem;
+    background-position: -17.5rem -8.5rem;
+}
+
+.cs-icon-5 {
+    background-position: -57.1rem -8.5rem;
+}
+
+.cs-icon-6 {
+    width: 4.5rem;
+    background-position: -62rem -8.5rem;
+}
+
+.sw-cs-pg {
+    top: -2rem;
+    right: 0;
+}
+
+.sw-cs-pg .swiper-pagination-bullet {
+    background-color: #ddd !important;
+    opacity: 1.0 !important;
+    margin: 0 0.3rem !important;
+}
+
+.sw-cs-pg .swiper-pagination-bullet-active {
+    background-color: #47ad1a !important;
 }
 
 .customer-login {
@@ -349,7 +416,7 @@ body {
     font-weight: 400;
     color: #333;
     line-height: 1.375;
-    letter-spacing: -0.15rme;
+    letter-spacing: -0.15rem;
 }
 
 .customer-login b {
@@ -418,7 +485,7 @@ body {
     font-size: 1.8rem;
     color: #333;
     font-weight: 500;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
     line-height: 1.35;
     padding: 1.5rem 0;
     text-align: center;
@@ -431,7 +498,7 @@ body {
     font-size: 1.7rem;
     color: #333;
     font-weight: 400;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
     line-height: 1.4;
     text-align: center;
 }
@@ -461,7 +528,6 @@ body {
 
 .good-icon-new {
     background-color: #f08b15;
-    ;
     display: block;
 }
 
@@ -703,7 +769,7 @@ body {
     margin-right: 0;
 }
 
-.best-rnak-1 {
+.best-rank-1 {
     position: absolute;
     left: 2rem;
     top: 2rem;
@@ -719,7 +785,7 @@ body {
     font-weight: 400;
 }
 
-.best-rnak-1 em {
+.best-rank-1 em {
     color: #429e31;
     font-style: normal;
     font-size: 6rem;
@@ -751,6 +817,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.05rem;
     line-height: 2.94rem;
+    color: #333;
 }
 
 .best-rank-1-txt>span:nth-child(2) em {
@@ -771,7 +838,6 @@ body {
 .banner-1 {
     position: relative;
     display: block;
-    padding: 10rem 0;
     text-align: center;
     background-color: #ac96e9;
 }
@@ -855,7 +921,7 @@ body {
     background-position: -14.9rem -13.7rem;
 }
 
-.faq-box:nth-child(4)>a:before {
+.faq-box:nth-child(4)>a::before {
     background-position: -1.1rem -13.6rem;
 }
 
@@ -881,10 +947,6 @@ body {
     position: relative;
     display: block;
     overflow: hidden;
-}
-
-.sw-banner2 {
-    height: 17rem;
 }
 
 .banner-slide {
@@ -981,14 +1043,12 @@ body {
 }
 
 .date {
-    position: absolute;
-    right: 0;
-    top: 0.2rem;
+    position: relative;
     display: block;
     float: right;
     width: 7.5rem;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: -0.05rem;
@@ -999,7 +1059,7 @@ body {
     position: relative;
     display: block;
     float: left;
-    width: 18.5rem;
+    width: 28.5rem;
 }
 
 .cs-phone {
@@ -1012,14 +1072,13 @@ body {
     letter-spacing: -0.05rem;
     color: #000;
     margin-top: 2.3rem;
-    white-space: nowrap;
 }
 
 .cs-phone span {
     position: relative;
     display: block;
     font-family: 'Montserrat', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.05rem;
@@ -1083,11 +1142,6 @@ body {
     position: relative;
     display: block;
     background-color: #f7f7f7;
-}
-
-.container {
-    position: relative;
-    display: block;
 }
 
 .f-top-menu {
